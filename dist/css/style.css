@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 0;
+    padding: 100px;
+    width: 100%;
+    height: 100vh;
+}
+
+.bgGreen {
+    background: linear-gradient(green, yellow)
+}
+
+.bgYellow {
+    background: linear-gradient(yellow, blue)
+}
+
+.bgBlue {
+    background: linear-gradient(blue, red)
+}
+
+.bgGrey {
+    background: linear-gradient(red, green)
+}
+
+.bgBlack {
+    background: black;
+}
+
+ul {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(172, 255, 47, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 15px;
+    margin: 25px;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul li {
+    margin: 0 5px;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.flexBox {
+    height: 70%;
+    width: 40%;
+    margin: 0 10px;
+    display: flex;
+}
+
+.flexItem {
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+}
+
+.blueFlex {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-items: flex-end;
+}
+
+.greyFlex {
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-content: space-around;
+}
+
+.relativeContainer {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.absoluteItem {
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    position: absolute
+}
+
+.first {
+    z-index: 4;
+    /* transform: translate(200%, 0); */
+    transform: rotate(45deg);
+    left: 200px;
+}
+
+.second {
+    z-index: 3;
+    top: 50px;
+    left: 50px;
+    
+}
+
+.third {
+    z-index: 2;
+    top: 100px;
+    left: 100px;
+    transform: translate(25%, 50%);
+    
+}
+
+.fourth {
+    z-index: 1;
+    top: 150px;
+    left: 150px;
+}
+
+.fifth {
+    right: 0;
+    top: -50px;
+}
+
+input {
+    margin: 0 auto;
+    display: block;
+    padding-left: 25px;
+}
