@@ -65,6 +65,8 @@ h1 {
     text-align: center;
 }
 
+
+
 .flexContainer {
     display: flex;
     justify-content: center;
@@ -151,5 +153,120 @@ h1 {
 input {
     margin: 0 auto;
     display: block;
-    padding-left: 25px;
+    /* padding-left: 25px; */
+    font-family: Arial, FontAwesome;
 }
+
+.input2 {
+    margin: 0 auto;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.icon::before {
+    content: "\f007";
+    position: relative;
+    font-family: Arial, FontAwesome;
+    display: inline-block;
+    margin-right: -15px;
+    color: grey;
+    font-style: 10px;
+
+}
+
+.inputGroup {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+td {
+    width: 150px;
+    text-align: center;
+}
+
+th {
+    height: 15px;
+}
+
+td:first-child {
+    width: 15px;
+}
+
+table, tr, td, th {
+    border-bottom: 1px solid rgb(119, 119, 119);
+    border-collapse: collapse;
+}
+
+thead tr {
+    background-color: chartreuse;
+}
+
+tr:nth-child(even) {
+    background-color: chartreuse;
+}
+
+tr:hover {
+    background-color: rgba(128, 255, 0, 0.514);
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 700px) {
+    .flexItem {
+        width: 50px;
+        height: 50px;
+    }
+
+    section {
+        padding: 1%;
+    }
+
+    .flexBox {
+        width: 80%;
+        height: 50%;
+    }
+
+    .flexContainer {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .absoluteItem {
+        width: 50px;
+        height: 50px;
+    }
+
+    .first {
+        left: 100px;
+    }
+
+    .second {
+        top: 25px;
+        left: 25px;
+    }
+
+    .third {
+        top: 50px;
+        left: 50px;
+    }
+
+    .fourth {
+        top: 75px;
+        left: 75px;
+    }
+
+    .fifth {
+        top: -25px;
+    }
+}
+
+/* End of Responsive */
+
+/* <i class="fas fa-user-check"></i> */
